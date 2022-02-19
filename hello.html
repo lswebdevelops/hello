@@ -13,30 +13,52 @@ function hello(){
         alert('Hello, world!')
 }
 
-let counter =0;
+function Welcome(){
+    if (document.querySelector('h2').innerHTML ==='Goodbye!'){
+    document.querySelector('h2').innerHTML ='Welcome!';
+} else {
+    document.querySelector('h2').innerHTML ='Goodbye!';
+}
+}
+
+function Hello(){
+    //changes the text
+    if (document.querySelector('h3').innerHTML === "Hello, world!"){
+        document.querySelector('h3').innerHTML = "now it is serious!";
+    } else {
+        document.querySelector('h3').innerHTML = "Hello, world!";
+    }
+    }
+    let counter =0;
 
 function count(){
-    counter = counter +123;
+    //counts / adds numbers 
+    counter = counter +73;
     // counter ++;
     //count += 1;
     //all valid
     alert (counter);
 
-}
+    
+    }
+
 </script>
 <body style="background-color: lightblue">
 
-<h1 style="color: red;"> Welcometo my page</h1>
+<h1 style="color: red;"> Welcome to my page</h1>
     <h2> Welcome back man</h2>
-Hello, world!
-just a test
-<h3> 
-    <button onclick="hello()"> Click here </button> 
-    <button onclick="count()"> Count </button> 
+    <h3>Hello, world!
+      
+        </h3>
+<p>
+    <button style="border-color: red;" onclick="hello()"> Click here </button> 
+   <p> <button style="background-color: burlywood; border-block: 15px ;" onclick="count()"> adds the favorite number of Sheldon </button>  </p>
+   <p> <button style="background-color: blueviolet; border-radius: 5px;" onclick="Welcome()"> Click say to say Goodbye! or Welcome!</button>
+    <button style="border-radius: 5px;" onclick="Hello()"> no more hellos##</button> </p>
     
+</p>
 
 
-</h3>
 
 </body>
 </html>
